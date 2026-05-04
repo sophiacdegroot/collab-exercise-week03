@@ -8,5 +8,5 @@ data = pd.DataFrame(
         "year": 2023,
     }
 )
-data.to_csv("gdp_data.csv", index=False)
 data["gdp_per_capita_usd"] = data["gdp_bn_usd"] / data["population_mn"] * 1000
+data.to_csv("gdp_data.csv", index=False)
